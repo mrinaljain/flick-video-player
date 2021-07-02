@@ -141,7 +141,8 @@ class FlickVideoManager extends ChangeNotifier {
           .seekTo(Duration(hours: 0, minutes: 0, seconds: 0, milliseconds: 0));
     }
 
-    if (autoPlay && ModalRoute.of(_flickManager._context!)!.isCurrent) {
+//     if (autoPlay && ModalRoute.of(_flickManager._context!)!.isCurrent) {
+    if (autoPlay) {
       // Start playing the video.
       _flickManager.flickControlManager!.play();
     }
